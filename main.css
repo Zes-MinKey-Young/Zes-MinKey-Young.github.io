@@ -1,6 +1,7 @@
 h1 {
     font-size: large;
     color: blue;
+    text-align: center;
 }
 
 #main {
@@ -12,5 +13,9 @@ a {
     color: #55aaff;
 }
 
+a:hover {
+    color: #55aaee;
+    text-decoration: underline;
+}
 
 
