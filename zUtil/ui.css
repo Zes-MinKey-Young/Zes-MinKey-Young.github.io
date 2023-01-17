@@ -1,0 +1,56 @@
+/* ui */
+.zui-widget-button {
+	cursor: pointer;
+	transition: box-shadow 0.5s ease-in !important;
+}
+
+.zui-widget-button:hover {
+	box-shadow: 2px 2px 1px 3px #bcd;
+}
+
+.zui-widget-button:active {
+	background-color: #60c0f0 !important;
+}
+
+.zui-widget-button.zui-widget-disabled {
+	background-color: grey;
+}
+
+.zui-widget-checkbox {
+	display: inline-block;
+	border: 1px solid silver;
+	border-radius: 7px;
+	height: 1.7em;
+	width: 1.7em;
+}
+
+.zui-widget-checkbox-disabled {
+	background-color: grey;
+}
+
+.zui-widget-checkbox-on {
+	background-color: #66ccff;
+}
+
+.zui-node {
+	background-color: #66ccff;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.zui-node-dragged {
+	box-shadow: 1px 1px 1px 1px grey;
+}
+
+.zui-between {
+	background-color: rgba(120, 160, 200, 40%);
+}
+
+.zui-place {
+	display: inline-block;
+	border: 2px solid silver;
+	border-radius: 7px;
+	width: 2em;
+	height: 2em;
+}
