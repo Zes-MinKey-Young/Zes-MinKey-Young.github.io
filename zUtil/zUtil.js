@@ -49,9 +49,8 @@
 		this.$clear = con.clearButton.$element.appendTo(z.$element).click(function () {
 			con.clear();
 		});
-		window.onerror = function (e, src, lineno, colno, error) {
-			var err = error
-			console.log(arguments)
+		$(window).on("error", function (ev) {
+			var err = ev.originalEvent.error
 			if (!err) { return }
 			var stack = err.stack || err.toString(), $span;
 			stack = stack.replace(/>/g, "&gt;");
@@ -68,7 +67,7 @@
 			$span = $("<span/>");
 			$span.css("whiteSpace", "pre").text(err.message + "\n" + stack);
 			con.addLine("err", $span, z.makeValue(ev.originalEvent));
-		}
+		});
 		var builtinLog = console.log;
 		console.log = function log() {
 			z.log.apply(z, arguments);
